@@ -1,0 +1,63 @@
+<style>
+        .daylight {
+            animation: pulse 5s infinite;
+            animation-duration: 24s;
+        }
+        
+        #esp,
+        #wixarika {
+            text-align: center;
+            font-size: 4vw;
+            margin: 40vw 0 0 0;
+        }
+        
+        @keyframes pulse {
+            0% {
+                background-color: #FBF0D7;
+            }
+            100% {
+                background-color: #1D1F4C;
+            }
+        }
+    </style>
+
+    <script>
+        const _e =
+            "Las palabras_las flores azules_have dignity_have rights_empathize_immerse_live safely_have privacy_can leave_can return_use skills_rest_learn";
+
+        const _w =
+            "Yéuparetá_tuutu muyuyuawi_have dignity_have rights_empathize_immerse_live safely_have privacy_can leave_can return_use skills_rest_learnyéuparetá_tuutu muyuyuawi_have dignity_have rights_empathize_immerse_live safely_have privacy_can leave_can return_use skills_rest_learn";
+
+        const e =
+            "se esconden_están hablando:_do not hide pain_display the kind warm side_practice authentic communication_have abundance_believe metapolicies protectyéuparetá_tuutu muyuyuawi_have dignity_have rights_empathize_immerse_live safely_have privacy_can leave_can return_use skills_rest_learn ";
+        const w =
+            "’aviesíca_‘ali metiniuka:_still tap into being human_have absence of division and            violence_have the ability to give and receive_have space_will byéuparetá_tuutu muyuyuawi_have dignity_have rights_empathize_immerse_live safely_have privacy_can leave_can return_use skills_rest_learn";
+
+        const e_ =
+            "bajo la tierra_dicen saberlo todo_do not hide pain_display the kind warmyéuparetá_tuutu muyuyuawi_have dignity_have rights_empathize_immerse_live safely_have privacy_can leave_can return_use skills_rest_learn";
+
+        const w_ =
+            "huutí cuíe_sem+temaiwawe_still tap into eing human_have absence of division and      violence_have the ability to give and receive_have space_will be ok_let go of scarcity_live in comfort thatyéuparetá_tuutu muyuyuawi_have dignity_have rights_empathize_immerse_live safely_have privacy_can leave_can return_use skills_rest_learn";
+
+        function vision(hikuri) {
+            return hikuri.split("_")[Math.floor(Math.random() * 2)];
+        }
+
+        function update() {
+            var i = Math.floor(Math.random() * 2);
+            var vision_es = [vision(_e) + " " + vision(e) + " " + vision(e_) + "."];
+            esp.innerHTML = vision_es;
+            var vision_wi = [vision(_w) + " " + vision(w) + " " + vision(w_) + "."];
+            wixarika.innerHTML = vision_wi;
+        }
+
+        window.onload = setInterval(update, 3500); //call update function
+    </script>
+
+    <!-- <div id='day'></div> -->
+
+    <div id="esp" style="color: #1D1F4C; ">
+        <!-- #F32998 pink -->
+        <p id="esp" style="color: #1D1F4C; ">...</p>
+        <p id="wixarika" style="margin: 10vw; color:#FBF0D7; ">...</p>
+    </div>

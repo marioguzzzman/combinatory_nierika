@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tukari y t+kar (Taper #5)</title>
+
+    <!-- “Name_of_work,” Copyright (C) 2020 Mario Guzman
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved. This file is offered as-is,
+without any warranty.
+
+This is from Taper #5: Pent Up, Fall 2020:
+
+https://taper.badquart.to/5/title_of_your_work.html
+
+... your creative statement here ...
+
+
+-->
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden
+        }
+        
+        a {
+            color: #eee;
+            text-decoration: none
+        }
+        
+        header {
+            margin: 0;
+            padding: 0;
+            background-color: #444;
+            color: #bbb;
+            position: relative;
+            z-index: 1000
+        }
+        
+        header>h1 {
+            margin: 0;
+            font-size: 12px;
+            font-family: sans-serif;
+            border-bottom: 1px #999 solid;
+            padding: 5px 10px;
+            line-height: 17px
+        }
+    </style>
+</head>
+
+<body class="daylight">
+    <header id=nav>
+        <h1>
+            <a href="index.html">Taper #5 :
+                Pent Up</a> : Fall 2020 <br>
+            <a href="Name_of_work.html">"Tukari y t+kar"</a> by
+            <a href="about.html#AUTHOR">Mario Guzman</a> :
+            <a href="prev.html">&lt;&lt;</a> &mdash;
+            <a href="next.html">&gt;&gt;</a> :
+            <a onclick="fullscreenEvt(true);"> Full screen </a>
+        </h1>
+        <script>
+            function fullscreenListeners(f) {
+                f("mozfullscreenchange", fullscreenEvt);
+                f("MSFullscreenChange", fullscreenEvt);
+                f("fullscreenchange", fullscreenEvt);
+                f("webkitfullscreenchange", fullscreenEvt);
+            }
+
+            function fullscreenEvt(incomingReq) {
+                fullscreenListeners(document.removeEventListener);
+                if (incomingReq === true || document.mozFullScreen || document.fullscreenElement ||
+                    document.webkitIsFullScreen || document.msFullscreenElement) {
+                    var fsElt;
+                    if (window.c instanceof HTMLCanvasElement) fsElt = window.c;
+                    else fsElt = document.documentElement;
+                    if (fsElt.requestFullscreen) fsElt.requestFullscreen();
+                    else if (fsElt.msRequestFullscreen) fsElt.msRequestFullscreen();
+                    else if (fsElt.mozRequestFullScreen) fsElt.mozRequestFullScreen();
+                    else if (fsElt.webkitRequestFullScreen) fsElt.webkitRequestFullScreen();
+                    nav.style.display = "none";
+                } else nav.style.display = "block";
+                if (typeof l === "function") setTimeout(l, 200);
+                fullscreenListeners(document.addEventListener);
+            }
+        </script>
+    </header>
+
+    <!-- The poem that follows, up to </body>, is at most 2kb -->
+
+    <style>
+        .daylight {
+            animation: pulse 5s infinite;
+            animation-duration: 24s;
+        }
+        
+        #esp,
+        #wixarika {
+            text-align: center;
+            font-size: 4vw;
+            margin: 40vw 0 0 0;
+        }
+        
+        @keyframes pulse {
+            0% {
+                background-color: #FBF0D7;
+            }
+            100% {
+                background-color: #1D1F4C;
+            }
+        }
+    </style>
+
+    <script>
+        const _e =
+            "las palabras_las flores azules_have dignity_have rights_empathize_immerse_live safely_have privacy_can leave_can return_use skills_rest_learn";
+
+        const _w =
+            "yéuparetá_tuutu muyuyuawi_have dignity_have rights_empathize_immerse_live safely_have privacy_can leave_can return_use skills_rest_learn";
+
+        const e =
+            "se esconden_están hablando:_do not hide pain_display the kind warm side_practice authentic communication_have abundance_believe metapolicies protect ";
+        const w =
+            "’aviesíca_‘ali metiniuka:_still tap into being human_have absence of division and            violence_have the ability to give and receive_have space_will b";
+
+        const e_ =
+            "bajo la tierra_dicen saberlo todo_do not hide pain_display the kind warm";
+
+        const w_ =
+            "huutí cuíe_sem+temaiwawe_still tap into eing human_have absence of division and      violence_have the ability to give and receive_have space_will be ok_let go of scarcity_live in comfort that";
+
+        function vision(hikuri) {
+            return hikuri.split("_")[Math.floor(Math.random() * 2)];
+        }
+
+        function viaje() {
+            var i = Math.floor(Math.random() * 2);
+            var vision_es = [vision(_e) + " " + vision(e) + " " + vision(e_) + "."];
+            esp.innerHTML = vision_es;
+            var vision_wi = [vision(_w) + " " + vision(w) + " " + vision(w_) + "."];
+            wixarika.innerHTML = vision_wi;
+        }
+
+        window.onload = setInterval(viaje, 3500);
+    </script>
+
+    <div id="esp" style="color: #1D1F4C;">
+        <!-- #F32998 pink -->
+        <p id="esp" style="color: #1D1F4C;">...</p>
+        <p id="wixarika" style="margin: 10vw; color:#FBF0D7;">...</p>
+    </div>
+
+    <!-- All poem code goes here, and must be less than or equal to 2048 bytes -->
+
+</body>
+
+</html>
