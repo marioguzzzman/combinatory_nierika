@@ -20,8 +20,6 @@ https://taper.badquart.to/5/title_of_your_work.html
 
 
 -->
-
-
     <style>
         body {
             margin: 0;
@@ -53,7 +51,7 @@ https://taper.badquart.to/5/title_of_your_work.html
     </style>
 </head>
 
-<body class="daylight">
+<body class="d">
     <header id=nav>
         <h1>
             <a href="index.html">Taper #5 :
@@ -94,13 +92,13 @@ https://taper.badquart.to/5/title_of_your_work.html
     <!-- The poem that follows, up to </body>, is at most 2kb -->
 
     <style>
-        .daylight {
+        .d {
             animation: pulse 5s infinite;
             animation-duration: 24s;
         }
         
-        #esp,
-        #wixarika {
+        #es,
+        #wi {
             text-align: center;
             font-size: 4vw;
             margin: 40vw 0 0 0;
@@ -124,7 +122,7 @@ https://taper.badquart.to/5/title_of_your_work.html
             "Yéuparetá_Tuutu muyuyuawi_Teurári_Hikuri_Téeté_Tiyu’uhayemáaváame_Cuupixica_Hai’uunári_Xicïri_Viiyéri_Haracúuna_Iyaaritïarica_Nana_Xuráve_Cuíe";
 
         const e =
-            "se esconde_esta hablando:_sacrifica_abre la puerta_sueña_sostiene_entra_vive_era_hïïcxme_cayó_suniríiya_’uhayemáarica_hecïarïya_yeiyá_núiya_hïricá";
+            "se esconde_esta hablando:_sacrifica_abre la puerta_sueña_sostiene_entra_vive_era_cayó_suniríiya_’uhayemáarica_hecïarïya_yeiyá_núiya_hïricá";
 
         const w =
             "’aviesíca_‘ali metiniuka:_máavaríca_nepïréuyépi_cuusí_tuicárica_nepéutáhaaní_yeexári_hïïcxme_suniríiya_’uhayemáarica_hecïarïya_yeiyá_núiya_hïricá";
@@ -135,25 +133,25 @@ https://taper.badquart.to/5/title_of_your_work.html
         const w_ =
             "huutí cuíe_sem+temaiwawe_hecïarïya_Niverícates_huye xeicári_muvíeri Vavaasári_quíevíexa_caivamá_haacuáari_haracúuna_haariitïarica_siipïríiqui_yuníiya_cïsitúiyaari_tai";
 
-        function vision(hikuri) {
-            return hikuri.split("_")[Math.floor(Math.random() * 2)];
+        function v(h) {
+            return h.split("_")[Math.floor(Math.random() * 15)];
         }
 
-        function viaje() {
+        function vi() {
             var i = Math.floor(Math.random() * 2);
-            var vision_es = [vision(_e) + " " + vision(e) + " " + vision(e_) + "."];
-            esp.innerHTML = vision_es;
-            var vision_wi = [vision(_w) + " " + vision(w) + " " + vision(w_) + "."];
-            wixarika.innerHTML = vision_wi;
+            var v_es = [v(_e) + " " + v(e) + " " + v(e_) + "."];
+            es.innerHTML = v_es;
+            var v_wi = [v(_w) + " " + v(w) + " " + v(w_) + "."];
+            wi.innerHTML = v_wi;
         }
 
-        window.onload = setInterval(viaje, 3500);
+        window.onload = setInterval(vi, 3500);
     </script>
 
     <div>
         <!-- #F32998 pink -->
-        <p id="esp" style="color: #1D1F4C;">.</p>
-        <p id="wixarika" style="margin: 10vw; color:#FBF0D7;">.</p>
+        <p id="es" style="color: #1D1F4C;">.</p>
+        <p id="wi" style="margin: 10vw; color:#FBF0D7;">.</p>
     </div>
 
     <!-- All poem code goes here, and must be less than or equal to 2048 bytes -->
