@@ -65,6 +65,7 @@ https://pueblosoriginarios.com/lenguas/huichol.php
             <a onclick="fullscreenEvt(true);"> Full screen </a>
         </h1>
         <script>
+
             function fullscreenListeners(f) {
                 f("mozfullscreenchange", fullscreenEvt);
                 f("MSFullscreenChange", fullscreenEvt);
@@ -90,13 +91,18 @@ https://pueblosoriginarios.com/lenguas/huichol.php
             }
         </script>
     </header>
-
+    <button type="button" onclick="document.querySelector('body').classList.toggle('dd');">Press me!</button>
     <!-- The poem that follows, up to </body>, is at most 2kb -->
 
     <style>
         .d {
             animation: pulse 5s infinite;
             animation-duration: 24s;
+        }
+        
+        .dd {
+            animation: pulse 5s infinite;
+            animation-duration: 86400s;
         }
         
         #es,
