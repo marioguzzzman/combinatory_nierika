@@ -15,18 +15,22 @@ https://taper.badquart.to/5/combinatory_nierika.html
 
 Following Taper's: Pent Up invitation to reflect on the significance of the number 5, the term 'Nierika' relates to the
 quincunx structure, a geometric pattern consisting of four points forming a square and a fifth at its center.
-For the Wixáritari, an indigenous culture located deep in the mountains of Mexico, it also represents a device build by
-their goddess mother when she crafted a rhomboid with her hairs and two crossed arrows provided by her sons, effectively
-creating the universe.
+For the Huichols or Wixáritari, an indigenous culture located deep in the mountains of Mexico, it also represents a
+device crafted by their goddess mother to create the universe: a rhomboid embroidered with her hairs and two crossed arrows provided by
+her sons.
 
 Nierika also means the "gift-of-seeing", an ability that shamans develop after practicing self-sacrifice, austerity,
 pilgrimage, fasting, and several other forms of vision searches.
 One of the most important of these activities is the ritual travel to Wirikuta, where they recreate the search for the
-mythical deer that transformed its hearth into a peyote, a cactus with psychoactive properties. To become a shaman or a
-healer, an individual must participate in at least five pilgrimages to Wirikuta.
+mythical deer that transformed its hearth into a peyote, a cactus with psychoactive properties.
+To become a shaman or a healer, an individual must participate in at least five pilgrimages to Wirikuta.
 
-The work "Combinatory Nierika" reimagines, in spanish and wixárika, the multiple visions that the Wixáritari may encounter
-while performing their ritual pilgrimage from the coastlines of Nayarit to Wirikuta, the northern part of San Luis Potosí, where the sun rises for the first time.
+The work "Combinatory Nierika" reimagines, in Spanish and Wixárika, the multiple visions that the Wixáritari may
+encounter while performing their ritual pilgrimage from the coastlines of Nayarit to Wirikuta, the northern part of San Luis
+Potosí, where the ritual ends and the sun rises for the first time.
+
+The background color performs a symbolic passage from the ocean to the desert, and from day to night. By pressing the
+Wirikuta button, you can experience the minimalistic virtual pilgrimage's time in a 24 hours or 24 seconds scale.
 
 Based on the article:
 Neurath, J. (2000). El don de ver: El proceso de iniciación y sus implicaciones para la cosmovisión huichola. Desacatos,
@@ -109,12 +113,14 @@ https://pueblosoriginarios.com/lenguas/huichol.php
 
     <style>
         .d {
-            animation: pulse 5s infinite;
-            animation-duration: 86400s;
-        }        
-        .r {
+            animation: pl 5s infinite;
             animation-duration: 24s;
         }
+        
+        .r {
+            animation-duration: 86400s;
+        }
+        
         .b {
             position: absolute;
             top: 10%;
@@ -128,7 +134,7 @@ https://pueblosoriginarios.com/lenguas/huichol.php
         
         .b:hover {
             background: #F32998;
-            color: white;
+            color: #FBF0D7;
         }
         
         #es,
@@ -138,7 +144,7 @@ https://pueblosoriginarios.com/lenguas/huichol.php
             margin: 20vw 0 0 0;
         }
         
-        @keyframes pulse {
+        @keyframes pl {
             0% {
                 background-color: #FBF0D7;
             }
@@ -150,22 +156,22 @@ https://pueblosoriginarios.com/lenguas/huichol.php
 
     <script>
         _e =
-            "La palabra_La flor azul_El venado_El peyote_La piedra_El curandero _La serpiente venenosa_El ojo de agua_El espejo_La lluvia_La laguna_Su pensamiento_La raíz_La estrella_La tierra";
+            "La palabra_El jaguar_El venado_El peyote_La piedra_El curandero _La serpiente venenosa_El ojo de agua_El espejo_La lluvia_La laguna_Su pensamiento_La raíz_La estrella_La tierra";
 
         _w =
-            "Yéuparetá_Tuutu muyuyuawi_Teurári_Hikuri_Téeté_Tiyu’uhayemáaváame_Cuupixica_Hai’uunári_Xicïri_Viiyéri_Haracúuna_Iyaaritïarica_Nana_Xuráve_Cuíe";
+            "Yéuparetá_Tuwe_Teurári_Hikuri_Téeté_Tiyu’uhayemáaváame_Cuupixica_Hai’uunári_Xicïri_Viiyéri_Haracúuna_Iyaaritïarica_Nana_Xuráve_Cuíe";
 
         e =
-            "se esconde_esta hablando:_sacrifica_abre la puerta_sueña_sostiene_entra_vive_era_cayó_cura_ilumina_camina_regresó_guarda";
+            "se esconde bajo_me habla sobre_se sacrifica en_abre la puerta a _sueña con_sostiene_entra en_habita_estaba en_cayó en_cura_ilumina como_camina sobre_regresó con_guarda";
 
         w =
             "’aviesíca_‘ali metiniuka:_máavaríca_nepïréuyépi_cuusí_tuicárica_nepéutáhaaní_yeexári_hïïcxme_suniríiya_’uhayemáarica_hecïarïya_yeiyá_núiya_hïricá";
 
         e_ =
-            "bajo la tierra_dice saberlo todo_la luz_a la constelación_el camino de arena_las plumas delvenado_al tiempo de lluvias_en la falda del cerro_la trampa_en la laguna_en sus aguas_como una chispa_sobre el sendero_con la tormenta_la memoria del fuego";
+            "el lobo_el cielo_la luz_la constelación_el camino de arena_las plumas del venado_el tiempo de las lluvias_la falda del cerro_la trampa_el centro_sus aguas_una chispa_el sendero_la tormenta_la memoria del fuego";
 
         w_ =
-            "huutí cuíe_sem+temaiwawe_hecïarïya_Niverícates_huye xeicári_muvíeri Vavaasári_quíevíexa_caivamá_haacuáari_haracúuna_haariitïarica_siipïríiqui_yuníiya_cïsitúiyaari_tai";
+            "huutí cuíe_sem+temaiwawe_hecïarïya_Niverícates_huye xeicári_muvíeri Vavaasári_quíevíexa_caivamá_haacuáari_mitsu_haariitïarica_siipïríiqui_yuníiya_cïsitúiyaari_tai";
 
         function v(h) {
             return h.split("_")[Math.floor(Math.random() * 15)];
@@ -178,7 +184,7 @@ https://pueblosoriginarios.com/lenguas/huichol.php
         }, 3500);
     </script>
 
-    <button class="b" onclick="document.body.classList.toggle('r');">tiempo--</button>
+    <button class="b" onclick="document.body.classList.toggle('r');">Wirikuta</button>
 
     <div>
         <!-- #F32998 pink -->
