@@ -110,14 +110,11 @@ https://pueblosoriginarios.com/lenguas/huichol.php
     <style>
         .d {
             animation: pulse 5s infinite;
+            animation-duration: 86400s;
+        }        
+        .r {
             animation-duration: 24s;
         }
-        
-        .dd {
-            animation: pulse 5s infinite;
-            animation-duration: 86400s;
-        }
-        
         .b {
             position: absolute;
             top: 10%;
@@ -126,8 +123,6 @@ https://pueblosoriginarios.com/lenguas/huichol.php
             background-color: Transparent;
             padding: 10px 15px;
             border: 0.16em solid #F32998;
-            /* border: transparent; */
-            /* margin: 0 0.3em 0.3em 0; */
             color: #F32998;
         }
         
@@ -154,56 +149,36 @@ https://pueblosoriginarios.com/lenguas/huichol.php
     </style>
 
     <script>
-        const _e =
+        _e =
             "La palabra_La flor azul_El venado_El peyote_La piedra_El curandero _La serpiente venenosa_El ojo de agua_El espejo_La lluvia_La laguna_Su pensamiento_La raíz_La estrella_La tierra";
 
-        const _w =
+        _w =
             "Yéuparetá_Tuutu muyuyuawi_Teurári_Hikuri_Téeté_Tiyu’uhayemáaváame_Cuupixica_Hai’uunári_Xicïri_Viiyéri_Haracúuna_Iyaaritïarica_Nana_Xuráve_Cuíe";
 
-        const e =
+        e =
             "se esconde_esta hablando:_sacrifica_abre la puerta_sueña_sostiene_entra_vive_era_cayó_cura_ilumina_camina_regresó_guarda";
 
-        const w =
+        w =
             "’aviesíca_‘ali metiniuka:_máavaríca_nepïréuyépi_cuusí_tuicárica_nepéutáhaaní_yeexári_hïïcxme_suniríiya_’uhayemáarica_hecïarïya_yeiyá_núiya_hïricá";
 
-        const e_ =
+        e_ =
             "bajo la tierra_dice saberlo todo_la luz_a la constelación_el camino de arena_las plumas delvenado_al tiempo de lluvias_en la falda del cerro_la trampa_en la laguna_en sus aguas_como una chispa_sobre el sendero_con la tormenta_la memoria del fuego";
 
-        const w_ =
+        w_ =
             "huutí cuíe_sem+temaiwawe_hecïarïya_Niverícates_huye xeicári_muvíeri Vavaasári_quíevíexa_caivamá_haacuáari_haracúuna_haariitïarica_siipïríiqui_yuníiya_cïsitúiyaari_tai";
 
         function v(h) {
             return h.split("_")[Math.floor(Math.random() * 15)];
         }
 
-        function vi() {
-            var i = Math.floor(Math.random() * 2);
-            var v_es = [v(_e) + " " + v(e) + " " + v(e_) + "."];
-            es.innerHTML = v_es;
-            var v_wi = [v(_w) + " " + v(w) + " " + v(w_) + "."];
-            wi.innerHTML = v_wi;
-        }
-
-        // function rt() {
-        //por alguna razon impide que el texto se escriba
-
-        //     var now = new Date();
-        //     var hours = now.getHours();
-
-        //     document.write('It\'s now: ', hours, '<br><br>');
-        //     document.bgColor = "#CC9900";
-        //     //18-19 night
-        //     if (hours > 17 && hours < 5) {
-        //         document.write('<body style="background-color: #1D1F4C">');
-        //     } else(hours > 6 && hours < 16) {
-        //         document.write('<bodystyle="background-color: #1D1F4C"> ');
-        //     }
-        // }
-
-        window.onload = setInterval(vi, 3500);
+        window.onload = setInterval(function() {
+            i = Math.floor(Math.random() * 2);
+            es.innerHTML = [v(_e) + " " + v(e) + " " + v(e_) + "."];;
+            wi.innerHTML = [v(_w) + " " + v(w) + " " + v(w_) + "."];
+        }, 3500);
     </script>
 
-    <button class="b" type="button" onclick="document.querySelector('body').classList.toggle('dd');">tiempo++</button>
+    <button class="b" onclick="document.body.classList.toggle('r');">tiempo--</button>
 
     <div>
         <!-- #F32998 pink -->
