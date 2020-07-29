@@ -21,7 +21,7 @@ Neurath, J. (2000). El don de ver: El proceso de iniciación y sus implicaciones
 Translation from Spanish to Wixárika:
 https://pueblosoriginarios.com/lenguas/huichol.php
 
-##Taper rules:
+## Taper rules:
 
 * All of your code (in the form of ES6, CSS, and HTML) must must fit within 2KB (2048 bytes) and be placed between the template’s closing header tag (</header>) and the closing body tag (</body>). The whole page must be valid HTML5 when you finish.
 * Submissions should not use any external libraries or APIs, nor link to any external resources, including fonts. This is so that pages will be self-contained following Taper’s vision. It also has the practical purpose of allowing all of Taper work without a network connection, for instance on a stand-alone computer in a gallery.
