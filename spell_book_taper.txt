@@ -5,6 +5,9 @@
 // minifiy
 http://minifycode.com/html-minifier/
 
+//bit counter
+https://mothereff.in/byte-counter
+
 // get time  Get the hour (0-23)
 
 <p >efefe </p> <p id="demo"> </p>
