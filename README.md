@@ -1,4 +1,4 @@
-# Combinatory Nierika,” Copyright (C) 2020 Mario Guzman
+# Combinatory Nierika 
 
 This is from Taper #5: Pent Up, Fall 2020:
 
